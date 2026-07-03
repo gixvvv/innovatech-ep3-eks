@@ -1,0 +1,13 @@
+{
+  "name": "backend-innovatech",
+  "version": "1.0.0",
+  "description": "Backend Innovatech - Node.js + Express",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.0"
+  }
+}

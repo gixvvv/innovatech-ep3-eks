@@ -1,0 +1,218 @@
+{
+    "service": {
+        "serviceArn": "arn:aws:ecs:us-east-1:159773920634:service/innovatech-cluster/frontend-service",
+        "serviceName": "frontend-service",
+        "clusterArn": "arn:aws:ecs:us-east-1:159773920634:cluster/innovatech-cluster",
+        "loadBalancers": [],
+        "serviceRegistries": [],
+        "status": "ACTIVE",
+        "desiredCount": 1,
+        "runningCount": 1,
+        "pendingCount": 0,
+        "launchType": "FARGATE",
+        "platformVersion": "LATEST",
+        "platformFamily": "Linux",
+        "taskDefinition": "arn:aws:ecs:us-east-1:159773920634:task-definition/frontend-task:2",
+        "deploymentConfiguration": {
+            "deploymentCircuitBreaker": {
+                "enable": false,
+                "rollback": false
+            },
+            "maximumPercent": 200,
+            "minimumHealthyPercent": 100,
+            "strategy": "ROLLING",
+            "bakeTimeInMinutes": 0
+        },
+        "deployments": [
+            {
+                "id": "ecs-svc/3720291423281808449",
+                "status": "PRIMARY",
+                "taskDefinition": "arn:aws:ecs:us-east-1:159773920634:task-definition/frontend-task:2",
+                "desiredCount": 0,
+                "pendingCount": 0,
+                "runningCount": 0,
+                "failedTasks": 0,
+                "createdAt": "2026-07-01T05:36:14.311000+00:00",
+                "updatedAt": "2026-07-01T05:36:14.311000+00:00",
+                "launchType": "FARGATE",
+                "platformVersion": "1.4.0",
+                "platformFamily": "Linux",
+                "networkConfiguration": {
+                    "awsvpcConfiguration": {
+                        "subnets": [
+                            "subnet-02d6568ee5e9711ab",
+                            "subnet-0a877e626981ef937"
+                        ],
+                        "securityGroups": [
+                            "sg-0f3c9f5d033db2dbd"
+                        ],
+                        "assignPublicIp": "ENABLED"
+                    }
+                },
+                "rolloutState": "IN_PROGRESS",
+                "rolloutStateReason": "ECS deployment ecs-svc/3720291423281808449 in progress."
+            },
+            {
+                "id": "ecs-svc/8012001176410661610",
+                "status": "ACTIVE",
+                "taskDefinition": "arn:aws:ecs:us-east-1:159773920634:task-definition/frontend-task:2",
+                "desiredCount": 1,
+                "pendingCount": 0,
+                "runningCount": 1,
+                "failedTasks": 0,
+                "createdAt": "2026-06-30T07:06:59.188000+00:00",
+                "updatedAt": "2026-06-30T07:10:14.710000+00:00",
+                "launchType": "FARGATE",
+                "platformVersion": "1.4.0",
+                "platformFamily": "Linux",
+                "networkConfiguration": {
+                    "awsvpcConfiguration": {
+                        "subnets": [
+                            "subnet-02d6568ee5e9711ab",
+                            "subnet-0a877e626981ef937"
+                        ],
+                        "securityGroups": [
+                            "sg-0f3c9f5d033db2dbd"
+                        ],
+                        "assignPublicIp": "ENABLED"
+                    }
+                },
+                "rolloutState": "COMPLETED",
+                "rolloutStateReason": "ECS deployment ecs-svc/8012001176410661610 completed."
+            }
+        ],
+        "roleArn": "arn:aws:iam::159773920634:role/aws-service-role/ecs.amazonaws.com/AWSServiceRoleForECS",
+        "events": [
+            {
+                "id": "0fe76542-0eed-4102-a829-7f67e53f4d3b",
+                "createdAt": "2026-07-01T01:11:07.798000+00:00",
+                "message": "(service frontend-service) has reached a steady state."
+            },
+            {
+                "id": "f2e31491-0444-4472-a50a-024014527cdd",
+                "createdAt": "2026-06-30T19:11:05.960000+00:00",
+                "message": "(service frontend-service) has reached a steady state."
+            },
+            {
+                "id": "f352fe82-af00-431a-960d-ef2d1800d6d6",
+                "createdAt": "2026-06-30T13:10:43.155000+00:00",
+                "message": "(service frontend-service) has reached a steady state."
+            },
+            {
+                "id": "28e8d9b9-9da5-4ef9-909b-097cad2ec29e",
+                "createdAt": "2026-06-30T07:10:14.717000+00:00",
+                "message": "(service frontend-service) has reached a steady state."
+            },
+            {
+                "id": "5a6d808c-5583-4480-8d65-46a00fecb87b",
+                "createdAt": "2026-06-30T07:10:14.716000+00:00",
+                "message": "(service frontend-service) (deployment ecs-svc/8012001176410661610) deployment completed."
+            },
+            {
+                "id": "5042bfeb-3540-44f6-8e61-6c492274af45",
+                "createdAt": "2026-06-30T07:09:01.932000+00:00",
+                "message": "(service frontend-service) has stopped 1 running tasks: (task 75882a887258496885ce4e0c623be57c)."
+            },
+            {
+                "id": "a944ab2a-b59b-455a-9219-b355dfee4892",
+                "createdAt": "2026-06-30T07:07:49.950000+00:00",
+                "message": "(service frontend-service) has started 1 tasks: (task 82f5975f63f94e9088a76f4609461506)."
+            },
+            {
+                "id": "98c26b78-2e63-42a2-b372-dfdc86157352",
+                "createdAt": "2026-06-30T07:07:07.871000+00:00",
+                "message": "(service frontend-service) has stopped 1 running tasks: (task 2dc79cb828d24bbe8559638a77e7a625)."
+            },
+            {
+                "id": "6399dc80-2da4-443d-bd3f-ac661ad30089",
+                "createdAt": "2026-06-30T07:06:06.152000+00:00",
+                "message": "(service frontend-service) has started 1 tasks: (task 75882a887258496885ce4e0c623be57c)."
+            },
+            {
+                "id": "bb9a0843-0c92-4092-8fa6-8fd318427454",
+                "createdAt": "2026-06-30T07:04:24.766000+00:00",
+                "message": "(service frontend-service) has reached a steady state."
+            },
+            {
+                "id": "c85df61f-2aaa-426e-b551-7d03c840e7a3",
+                "createdAt": "2026-06-30T07:04:24.765000+00:00",
+                "message": "(service frontend-service) (deployment ecs-svc/4460171042793704214) deployment completed."
+            },
+            {
+                "id": "d6dd9091-d09b-4b7e-af99-416017f66cc8",
+                "createdAt": "2026-06-30T07:03:11.117000+00:00",
+                "message": "(service frontend-service) has stopped 1 running tasks: (task f40c2f4a2aa04b40a6603df82fe42819)."
+            },
+            {
+                "id": "8e15421f-f605-433d-98ff-c0f75d5cab75",
+                "createdAt": "2026-06-30T07:02:10.770000+00:00",
+                "message": "(service frontend-service) has started 1 tasks: (task 2dc79cb828d24bbe8559638a77e7a625)."
+            },
+            {
+                "id": "da87e2e7-5095-45cc-905b-dfe5f937baef",
+                "createdAt": "2026-06-30T07:01:39.455000+00:00",
+                "message": "(service frontend-service) has stopped 1 running tasks: (task 5149d1fae10c4c8ab434f33a4a644f52)."
+            },
+            {
+                "id": "33e4864e-fca5-42be-8ae0-c83ada76ab4c",
+                "createdAt": "2026-06-30T07:00:38.391000+00:00",
+                "message": "(service frontend-service) has started 1 tasks: (task f40c2f4a2aa04b40a6603df82fe42819)."
+            },
+            {
+                "id": "a24c7702-9e61-42ba-bee9-05d67feb132b",
+                "createdAt": "2026-06-30T06:20:19.425000+00:00",
+                "message": "(service frontend-service) has reached a steady state."
+            },
+            {
+                "id": "7a165498-41bb-423c-b1ee-60068cae2396",
+                "createdAt": "2026-06-30T06:20:19.424000+00:00",
+                "message": "(service frontend-service) (deployment ecs-svc/2888172097409733109) deployment completed."
+            },
+            {
+                "id": "cd360381-8a35-42d8-9913-4dc71c37b245",
+                "createdAt": "2026-06-30T06:19:50.235000+00:00",
+                "message": "(service frontend-service) has started 1 tasks: (task 5149d1fae10c4c8ab434f33a4a644f52)."
+            }
+        ],
+        "createdAt": "2026-06-30T06:19:35.115000+00:00",
+        "currentServiceRevisions": [
+            {
+                "arn": "arn:aws:ecs:us-east-1:159773920634:service-revision/innovatech-cluster/frontend-service/3720291423281808449",
+                "requestedTaskCount": 0,
+                "runningTaskCount": 0,
+                "pendingTaskCount": 0
+            },
+            {
+                "arn": "arn:aws:ecs:us-east-1:159773920634:service-revision/innovatech-cluster/frontend-service/8012001176410661610",
+                "requestedTaskCount": 1,
+                "runningTaskCount": 1,
+                "pendingTaskCount": 0
+            }
+        ],
+        "placementConstraints": [],
+        "placementStrategy": [],
+        "networkConfiguration": {
+            "awsvpcConfiguration": {
+                "subnets": [
+                    "subnet-02d6568ee5e9711ab",
+                    "subnet-0a877e626981ef937"
+                ],
+                "securityGroups": [
+                    "sg-0f3c9f5d033db2dbd"
+                ],
+                "assignPublicIp": "ENABLED"
+            }
+        },
+        "healthCheckGracePeriodSeconds": 0,
+        "schedulingStrategy": "REPLICA",
+        "deploymentController": {
+            "type": "ECS"
+        },
+        "createdBy": "arn:aws:iam::159773920634:role/voclabs",
+        "enableECSManagedTags": false,
+        "propagateTags": "NONE",
+        "enableExecuteCommand": false,
+        "availabilityZoneRebalancing": "ENABLED",
+        "resourceManagementType": "CUSTOMER"
+    }
+}
