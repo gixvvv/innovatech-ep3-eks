@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-innovatech
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: frontend-innovatech
+  template:
+    metadata:
+      labels:
+        app: frontend-innovatech
+    spec:
+      containers:
+        - name: frontend-innovatech
+          image: 159773920634.dkr.ecr.us-east-1.amazonaws.com/frontend_innovatech:latest
+          ports:
+            - containerPort: 80
